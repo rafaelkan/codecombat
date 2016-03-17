@@ -129,6 +129,7 @@ module.exports = class CocoRouter extends Backbone.Router
     'teachers': go('NewHomeView')
     'teachers/freetrial': go('teachers/RequestQuoteView')
     'teachers/quote': go('teachers/RequestQuoteView')
+    'teachers/signup': -> if me.isAnonymous() then @routeDirectly('teachers/CreateTeacherAccountView', []) else @navigate('/teachers/convert', {trigger: true, replace: true})
     'teachers/demo': go('teachers/RequestQuoteView')
 
     'test(/*subpath)': go('TestView')
