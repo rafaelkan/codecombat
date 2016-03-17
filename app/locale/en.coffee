@@ -771,6 +771,8 @@
     learn_more_modal: "Teacher accounts on CodeCombat have the ability to monitor student progress, assign enrollments and manage classrooms. Teacher accounts cannot be a part of a classroom - if you are currently enrolled in a class using this account, you will no longer be able to access it once you convert to a Teacher Account."
     create_account: "Create a Teacher Account"
     create_account_subtitle: "Get access to the trial version of CodeCombat Courses for your students, course guides for teachers and more!"
+    convert_account_title: "Convert to Teacher Account"
+    convert_account: "Convert Account"
 
   versions:
     save_version_title: "Save New Version"
