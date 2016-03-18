@@ -61,6 +61,9 @@ UserSchema.methods.isArtisan = ->
 UserSchema.methods.isAnonymous = ->
   @get 'anonymous'
 
+UserSchema.methods.isTeacher = ->
+  return @get('role') in ['teacher', 'technology coordinator', 'advisor', 'principal', 'superintendent']
+
 UserSchema.methods.getUserInfo = ->
   id: @get('_id')
   email: if @get('anonymous') then 'Unregistered User' else @get('email')
