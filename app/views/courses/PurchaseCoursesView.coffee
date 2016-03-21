@@ -39,7 +39,6 @@ module.exports = class PurchaseCoursesView extends RootView
 
   onLoaded: ->
     @pricePerStudent = @products.findWhere({name: 'course'}).get('amount')
-    me.setRole 'teacher'
     super()
 
   getPriceString: -> '$' + (@getPrice()/100).toFixed(2)
